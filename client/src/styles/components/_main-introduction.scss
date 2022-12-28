@@ -1,0 +1,31 @@
+.main-introduction{
+    background: color("grayed");
+    //padding: rem(120px) 0;
+
+    .video-widget{
+        border-radius:0;
+        max-width: 100%;
+        background-color: color('secondry-bg');
+        color: color('light');
+
+        @media (max-width:767px){
+            display:block;
+        }
+
+        >a{
+            width:40%;
+            flex: 0 0 40%;
+        }
+
+        .video-modal{
+            width:100%;
+            min-height: rem(228px);
+        }
+
+        .title,
+        .author,
+        a{
+            color: color('light');
+        }
+    }
+}

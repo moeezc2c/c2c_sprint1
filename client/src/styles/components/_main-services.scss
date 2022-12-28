@@ -1,0 +1,114 @@
+.main-services{
+        padding-bottom: rem(100px);
+
+        @media (max-width:767px){
+            padding: rem(60px) 0;
+        }
+
+        .services-wrapper {
+            margin-top: -15%;
+            position:relative;
+            padding: 0 rem(120px);
+
+            @media (max-width:846px){
+                margin-top: 0;
+                padding: 0 rem(60px);
+            }
+        }
+
+        .slick-slider{
+            position:relative;
+            
+            .slick-arrow{
+                position: absolute;
+                top: 20%;
+                // transform: translateY(-50%);
+                border:none;
+                background: none transparent;//color('silk-btn');
+                // box-shadow: 0 rem(3px) rem(6px) rgba(0,0,0,0.16);
+                width: rem(60px);
+                height: rem(60px);
+                border-radius: $widget-radius;
+                z-index: 6;
+
+                svg{
+                    width: rem(13.607px);
+                    height: rem(25.682px);
+                    path{
+                        fill: color('silk-btn');
+                    }
+                }
+
+                &:focus,
+                &:active{
+                    outline:none;
+                }
+
+                &.slick-prev{
+                    left: rem(-74px);
+                }
+                &.slick-next{
+                    right: rem(-74px);
+                }
+            }
+
+            .slick-list{
+                z-index:0;
+                .slick-slide{
+                    padding:rem(15px);
+
+                    .choice{
+                        background-color: color('widget-bg');
+                        border-radius:$widget-radius;
+                        box-shadow: 0 rem(3px) rem(20px) rgba(0,0,0,0.20);
+                        padding: rem(30px);
+                        
+
+                        .tech-icon{
+                            display:block;
+                            margin-bottom: rem(15px);
+                            min-height: rem(112px);
+                        }
+
+                        h4.title{
+                            @include font(bold,1,'md','base');
+                            margin: rem(5px) 0 rem(15px);
+                            color: color('secondry-bg');
+                            
+                            span{
+                                display:inline-block;
+                                position: relative;
+
+                                &::after{
+                                    content: "";
+                                    display: block;
+                                    background: url('../../img/hline.png') no-repeat;
+                                    background-size:cover;
+                                    width: rem(91px);
+                                    height: rem(5px);
+                                    position: absolute;
+                                    top: rem(-10px);
+                                    right: 0;
+                                }
+                            }
+                        }
+
+                        p{
+                            text-align: justify;
+                            margin-bottom: rem(50px);
+                        }
+
+                        a{
+                            display:block;
+                            text-align: end;
+                            text-decoration: underline;
+                            @include font(700,1,'nr','base');
+                            color: color('dark');
+                        }
+
+                    }
+                }
+            }
+
+        }// .slick-slider
+}

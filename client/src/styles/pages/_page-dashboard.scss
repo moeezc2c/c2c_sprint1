@@ -1,0 +1,28 @@
+.page-dashboard{
+    padding: rem(50px) 0;
+    background: url("../../img/globe-bg.png") fixed top center color("grayed");
+
+    .step-for-best-seller{
+        h5.mb-4{
+            margin-top: rem(6px);
+        }
+        img{
+            max-width: 100%;
+            width: rem(70px);
+            margin-bottom: rem(5px);
+        }
+        p.text-muted {
+            min-height: rem(120px);
+        }
+    }
+
+    .dashboard-box{
+        @media (max-width:767px){
+            margin-top: rem(40px);
+        }
+
+        h5{
+            min-height: rem(40px);
+        }
+    }
+}

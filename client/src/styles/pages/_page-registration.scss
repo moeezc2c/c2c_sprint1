@@ -1,0 +1,87 @@
+.page-registration{
+
+
+    .select-user-type{
+        @include font(normal,1.4,'nr','base');
+        margin-bottom: rem(30px);
+
+        .form-check{
+            font-weight: 600;
+        }
+    }
+
+    .box-shadow{
+        @media (max-width:767px){
+            padding: rem(50px);
+        }
+
+        
+
+        .description{
+            margin-bottom:rem(20px);
+        }
+
+        .agreement-checkbox{
+            @include font(400,1.4,'nr','base');
+            color: color('text');
+
+            input[type="checkbox"]{
+                margin-right:rem(10px);
+            }
+
+            // a{
+            //     text-decoration:none;
+            // }
+
+            .custom-control{
+                padding-left: 0;
+            }
+        }
+
+        .login-here{
+            @include font(600,1.4,'nr','base');
+            text-align: end;
+
+            @media (max-width:767px){
+                display: block !important;
+
+                .text{
+                    display:block;
+                    margin-bottom: rem(20px);
+                }
+            }
+        }
+
+        // .custom-control-label{
+        //     &::before,
+        //     &::after{
+        //         // display:none;
+        //     }
+        //     .custom-control-input{
+        //         // position: relative;
+        //     }
+        // }
+
+        .custom-control-label{
+            text-align: left;
+            padding-left: rem(36px);
+
+            &::before,
+            &::after{
+                width:rem(26px);
+                height:rem(26px);
+                left: 0;
+                top: rem(4px);
+            }
+
+            // &::after{
+               
+            //     left: 0px;               
+            // }
+        }
+
+    }
+
+    
+
+}

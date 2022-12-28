@@ -1,0 +1,38 @@
+.main-find-services{
+    padding: rem(140px) 0;
+    position: relative;
+    background: url('../../img/find-services-bg.png') no-repeat center center color('widget-bg');
+    background-size: rem(660px);
+    @include font(normal,1.4,'nr','base');
+
+    @media (max-width:767px){
+        padding: rem(60px) 0;
+    }
+
+    h3,.title{
+        @include font(bold,1.4,'xmd','heading');
+        text-transform: uppercase;
+        margin: 0 0 rem(40px) 0;
+    }
+
+    p{
+        margin-bottom: rem(40px);
+    }
+    
+
+    .figure-multi-layered{
+        width: rem(532px);
+        max-width: 100%;
+        // height: rem(547px);
+
+        @media (max-width:767px){
+            margin: rem(120px) auto;
+            max-width: 65%;
+        }
+
+        img{
+            object-fit: cover;
+        }
+    }
+
+}

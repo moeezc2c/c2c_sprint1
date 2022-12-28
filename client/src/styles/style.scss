@@ -1,0 +1,72 @@
+
+@import './variables';
+@import './bootstrap/bootstrap';
+// @import './slick/slick',
+//         './slick/slick-theme';
+
+// @import '~slick-carousel/slick/slick', '~slick-carousel/slick/slick-theme';
+// @import '~slick-carousel/slick/slick.css';
+// @import '~slick-carousel/slick/slick-theme.css';
+
+@import './functions/color',
+        './functions/fontFamily',
+        './functions/fontSizes',
+        './functions/rem';
+
+// Mixins
+@import 'mixins/arrow',
+        'mixins/border-radius',
+        'mixins/rotate',
+        'mixins/scale',
+        'mixins/skew',
+        'mixins/gradient',
+        'mixins/translate',
+        'mixins/perspective',        
+        'mixins/box-sizing',
+        'mixins/transition',
+        'mixins/transform',
+        'mixins/transform-style',
+        'mixins/transform-origin',
+        'mixins/backface-visibility',
+        'mixins/scrollbar',
+        'mixins/headings',
+        'mixins/font',
+        'mixins/placeholder',
+        'mixins/animation',
+        
+        // MEDIA QUERIES
+        'mixins/mediaquery-custom',
+        'mixins/mediaquery-desktop',
+        'mixins/mediaquery-tablet',
+        'mixins/mediaquery-mobile',
+        'mixins/mediaquery-desktop-fix';
+
+@import './components/general',
+        './components/header',
+        './components/footer',
+        './components/svg',
+        './components/carousel',
+        './components/main-slider',
+        './components/form-controls',
+        './components/main-services',
+        './components/main-introduction',
+        './components/video-widget',
+        './components/main-find-services',
+        './components/box-under-container',
+        './components/seller-card',
+        './components/freelancer-list',
+        './components/messages-box',
+        './components/posted-jobs',
+        './components/search-engine', 
+        './components/modal',
+        './components/panel-box';
+
+@import './pages/page-login',
+        './pages/page-registration',
+        './pages/page-forgetpassword',
+        './pages/page-dashboard',
+        './pages/page-home',
+        './pages/page-talent',
+        './pages/page-auth',
+        './pages/page-contract-details',
+        './pages/page-about';

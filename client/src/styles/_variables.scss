@@ -1,0 +1,74 @@
+/*===============================
+            SIZES
+===============================*/
+// $size-xs: 0.625rem; //10px;
+// $size-sm: 0.75rem; //12px;
+
+$size-xs: 0.75rem; //14px; 12
+$size-sm: 0.875rem; //18px; 14
+$size-nr: 1rem; //20px; 16
+$size-md: 1.25rem; //24px; 20
+$size-xmd: 1.5rem; //34px; 24
+$size-lg: 2.125rem; //48px; 34
+$size-xlg: 3rem; //55px; 48
+
+/*===============================
+        Fonts Configrations
+===============================*/
+$font-base    : 'Roboto'#{', sans-serif'};
+$font-heading : 'Roboto'#{', sans-serif'}; //aileron
+
+
+
+$colors: (
+    primary-bg:         #40ADDB, //#2BACE2
+    primary-bg-light:   #E7FDFB,
+    primary-fg:         #ffffff,
+    secondry-bg:        #01131D, //#030C27,
+    secondry-bg-light:  #043CAA, //#003352,
+    secondry-fg:        #ffffff,
+    widget-bg:          #ffffff,
+    base:               #5e6d55,
+    heading:            #000000, //#01131D,
+    border:             #dddddd,
+    text:               #646B6F,
+    label:              #646B6F,
+    silk-btn:           #ffffff, //#80828A,
+    slider-search-btn:  #ffffff,
+    light:              #ffffff,
+    dark:               #01131D,
+    ice:                #F9FDFC,
+    grayed:             #EEEEEE,
+    grayed2:            #EDEFF2,
+    btn-default:        #01131D,
+    btn-normal:         #ffffff,
+    danger:             #f00000,
+);
+
+$font:(
+    base                :      $font-base, //'Rubik'#{', sans-serif'},
+    heading             :      $font-heading, //'Rubik'#{', sans-serif'}
+);
+
+$font-size:(
+    xs: $size-xs,
+    sm: $size-sm,
+    nr: $size-nr,
+    md: $size-md,
+    xmd: $size-xmd,
+    lg: $size-lg,
+    xlg: $size-xlg
+);
+
+/*===============================
+            MISC.
+===============================*/
+$widget-radius: 0.9375rem; //0.3125rem;
+$control-radius: 0.3125rem;
+
+$shadow: 0 0.125rem 0.3125rem rgba(#000000, 0.16);
+$shadowHover: 0 0.125rem 0.5rem rgba(#000000, 0.12);
+
+$primary:       #40ADDB !default;
+$secondary:     #006a85 !default; 
+$component-active-bg: $secondary;

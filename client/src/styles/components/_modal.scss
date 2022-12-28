@@ -1,0 +1,74 @@
+.modal{
+
+    &-dialog{
+
+    }
+
+    &-content{
+
+    }
+
+    &-title{
+
+    }
+
+    &-footer{
+        border-top: none;
+    }
+
+    &-content{
+        border-radius:$widget-radius;
+    }
+    
+    &-header{
+        border-bottom: none;
+
+        button.close{
+            font-size: rem(36px);
+        }
+
+        .modal-title{
+            @include font(700,1.4,'md','heading');
+            // color: color('primary-bg');
+        }
+    }
+    &-body{
+        max-height: rem(400px);
+        overflow-y: auto;
+    }
+
+    &-invitation{
+        .modal-body{
+            .card{
+                cursor: pointer;
+                @include transition(all 0.2s ease-out);
+                // border: none;
+                border: rem(2px) solid color('border');
+                border-radius: none;
+
+                &:hover{
+                    background:color('grayed');
+                }
+            }
+        }
+    }
+
+    .btn-default{
+        background: color('light');
+        color: color('dark');
+    }
+
+    &-open{
+        .modal {
+            background: rgba(0,0,0,0.8);
+        }
+    }
+
+    //modal-education
+    &-education{
+        .modal-body {
+            overflow-x: hidden;
+        }
+    }
+
+}

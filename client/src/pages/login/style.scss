@@ -1,0 +1,19 @@
+.otp-main{
+    min-height:50vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    div>{
+        align-items:center;
+        justify-content:center;
+        div{
+            height: 50px;
+            width: 50px;
+        }
+        input{
+            height: 100% !important;
+            width: 100% !important;
+        }
+    }
+}

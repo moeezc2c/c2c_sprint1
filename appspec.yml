@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /opt/app
+hooks:
+  AfterInstall:
+    - location: scripts/cleanbuild.sh
+      timeout: 1600
+      runas: root
+  ApplicationStart:
+    - location: scripts/install.sh
+      timeout: 1600
+      runas: root

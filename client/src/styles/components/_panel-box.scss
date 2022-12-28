@@ -1,0 +1,28 @@
+.panel-box{
+    background: color('widget-bg');
+    box-shadow: 0 rem(3px) rem(6px) rgba(#000,0.16);
+    border-radius: $widget-radius;
+    
+    // &--wrap{
+
+    // }
+
+    &--header{
+        padding: rem(16px) rem(24px);
+        border-bottom: rem(1px) solid color('border');
+    }
+
+    &--title{
+        @include font(500,1,'md','heading');
+        margin:0;
+    }
+
+    &--body{
+        padding: rem(16px) rem(24px);
+    }
+
+    &--footer{
+        padding: rem(16px) rem(24px);
+    }
+    
+}

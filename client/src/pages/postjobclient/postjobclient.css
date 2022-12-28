@@ -1,0 +1,8 @@
+.drag-drop{
+    max-width: 1000px !important;
+    width: 95%;
+}
+
+.file-types{
+    max-width: max-content !important;
+}

@@ -1,0 +1,22 @@
+.page-talent{
+    .advanced-search{
+        .btn-filter{
+            padding: rem(0px) rem(20px);
+            @media (max-width:767px){
+                // margin-left: rem(20px);
+                // width: calc(100% - #{rem(20px)});
+            }
+        }
+        @media (max-width:767px){
+            .col-md-2.pl-0 {
+                padding-left: 15px !important;
+            }
+        }        
+    }
+
+    .search-engine{
+        @media (max-width:767px){
+            margin-bottom: rem(10px);
+        }
+    }
+}

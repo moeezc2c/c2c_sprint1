@@ -1,0 +1,24 @@
+.search-engine{
+    box-shadow: $shadow;
+    border-radius:$control-radius;
+
+    .form-control{
+        box-shadow:none;
+    }
+    .btn{
+        line-height: 1;    
+    }
+}
+
+.advanced-search{
+    .btn-filter{
+        box-shadow: $shadow;
+
+        &:focus,
+        &:active,
+        &:hover{
+            border:none;
+            box-shadow:$shadowHover;
+        }
+    }
+}

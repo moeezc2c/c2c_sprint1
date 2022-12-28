@@ -1,0 +1,114 @@
+.box-under-container{
+    background: url("../../img/globe-bg.png") fixed top center color("grayed");
+    background-size: cover;
+    padding: rem(120px) 0;
+
+
+    .box-shadow{
+        .logo{
+            margin-bottom: rem(70px)
+        }
+
+        .heading{
+            @include font(bold,1.4,'xmd','heading');
+            font-size: calc(fontSize('xmd') - rem(4px));
+            text-transform: uppercase;
+            margin-bottom: rem(25px);
+        }
+
+        .description{
+            @include font(normal,1.4,'nr','base');
+            margin-bottom: rem(50px);
+        }
+
+        .tab-content{
+            background-color: transparent;
+            padding: 0;
+        }
+    }
+
+    .cyber-form-control{
+
+        .form-label{
+            // background: color('primary-bg');
+            color: color('label');
+            @include font(700,1.4,'nr','base');
+            margin: 0;
+            padding: rem(5px) 0;
+            border-radius: $control-radius $control-radius 0 0;
+        }
+    
+        .input-group,
+        .form-control,
+        .PhoneInput,
+        .PhoneInput input[type="tel"]{
+            min-height: rem(55px);
+        }
+    
+        .error-text{
+            color: color('danger');
+            display:block;
+            margin-bottom:rem(15px);
+        }
+    
+        .input-group,
+        .PhoneInput{
+            background: color('ice');
+            box-shadow: 0 rem(2px) rem(5px) rgba(#000000, 0.16);
+    
+            .input-group-text{
+                padding: rem(5) rem(15px);
+            }
+            
+            .form-control,
+            input[type="tel"]{
+                background-color: transparent;
+            }
+        }
+    
+        .PhoneInput{
+            margin-bottom: rem(16px);
+    
+            .PhoneInputCountry{
+                min-width: rem(50px);
+                display: flex;
+                justify-content: center;
+                padding-left: rem(10px);
+            }
+            input[type="tel"],
+            input[type="tel"]:focus,
+            input[type="tel"]:focus-visible,
+            input[type="tel"]:active{
+                border: none !important;
+            }
+    
+            &.PhoneInput--focus{
+                input[type="tel"],
+                input[type="tel"]:focus,
+                input[type="tel"]:focus-visible,
+                input[type="tel"]:active{
+                    border: none !important;
+                }
+            }
+        }
+    
+    
+        .input-group-text{
+            background-color: transparent;
+            border: none;
+        }
+    
+        .form-control{
+            box-shadow:none;
+            border:none;
+            @include font(400,1.4,'nr','base');
+    
+            &:focus,
+            &:active{
+                box-shadow:none;
+                border:none;
+            }
+        }
+    
+    }
+}

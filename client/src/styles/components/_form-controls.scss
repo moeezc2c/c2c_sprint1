@@ -1,0 +1,267 @@
+.form-control{
+    color: color('text');
+    height: rem(55px);
+
+    &::placeholder{
+        color: color('text');
+    }
+}
+
+.input-group{
+
+    .form-control{
+        & + .input-group-prepend{
+            .btn{
+                border-radius: 0 $control-radius $control-radius 0;
+            }
+        }
+    }
+}
+
+.dropdown{
+    .btn{
+        box-shadow:none;
+    }
+}
+
+.btn-filter{
+    min-height: rem(45px);
+    min-width: rem(100px);
+}
+
+.btn-default:not(:disabled):not(.disabled).active, 
+.btn-default:not(:disabled):not(.disabled):active, 
+.show>.btn-default.dropdown-toggle{
+    background-color: color('btn-default');
+    color: color('primary-fg');
+}
+
+.btn-default:not(:disabled):not(.disabled).active:focus, 
+.btn-default:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-default.dropdown-toggle:focus{
+    box-shadow:$shadowHover;
+}
+
+.btn{
+    @include font(600,1.4,'nr','base');
+    text-transform: capitalize;
+    text-transform: none;
+    padding: rem(12px) rem(26px);
+    border-radius: $control-radius;
+    box-shadow: $shadow;
+    
+    &.btn-sm{
+        padding: rem(6px) rem(16px);
+        @include font(600,1.4,'sm','base');
+    }
+
+    @media (max-width:767px){
+        padding: rem(12px) rem(20px);
+    }
+
+    
+
+    &-default,
+    &-default:hover{
+        background-color: color('btn-default');
+        color: color('primary-fg');        
+    }
+
+    &-default:hover{
+        border-color:color('btn-default');
+    }
+
+    &-normal{
+        background-color: color('btn-normal');
+        color: color('text');   
+        border:rem(1px) solid color('border') !important;     
+    }
+
+    &-block {
+        display: block;
+        width: 100%;
+    }
+
+    &-filter{
+        background: color('light') !important;
+        color: color('dark') !important;
+        border-color: color('border');
+        white-space: nowrap;
+    }
+
+    &-secondary{
+        @include button-variant(color('secondry-bg'), color('secondry-bg'), $hover-background: darken(color('secondry-bg'), 7.5%), $hover-border: darken(color('secondry-bg'), 10%), $active-background: darken(color('secondry-bg'), 10%), $active-border: darken(color('secondry-bg'), 12.5%));
+    }
+
+}// .btn
+
+form{
+    @include font(400,1.4,'nr','base');
+}
+
+.form-check {
+    padding-left: rem(30px);
+}
+
+.options-list{
+    list-style:none;
+    margin:0;
+    padding:0;
+    >li{
+        & + li{
+            margin-top: rem(15px);
+        }
+    }
+    .form-check{
+        padding-left:0;
+    }
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+    min-width: rem(20px);
+    min-height: rem(20px);
+    vertical-align: middle;
+    margin-right: rem(8px);
+}
+
+.cyber-input{
+    height: rem(45px);
+    @include font(400,1.4,'nr','base');
+    border-radius: $control-radius;
+    background: color('ice') !important;
+    box-shadow: $shadow;
+
+    &:focus,
+    &:active{
+
+    }
+}
+
+.form-control{
+    @extend .cyber-input;
+
+    &:focus,
+    &:active{
+
+    }
+}
+
+.select__control{
+    @extend .cyber-input;
+}
+
+.form-label,
+.col-form-label{
+    // background: color('primary-bg');
+    color: color('label');
+    @include font(700,1.4,'sm','base');
+    margin: 0;
+    padding: rem(5px) 0;
+    border-radius: $control-radius $control-radius 0 0;
+}
+
+.cyber-form-control{
+
+    &.form-group{
+        margin-bottom: rem(30px);
+    }
+
+    textarea.form-control{
+        height:auto;
+        min-height:rem(140px);
+    }
+
+    select.form-control{
+        appearance: auto;
+    }
+
+    .input-group,
+    .form-control,
+    .PhoneInput,
+    .PhoneInput input[type="tel"]{
+        height: rem(45px);
+        @include font(400,1.4,'nr','base');
+        border-radius: $control-radius;
+    }
+
+    .error-text{
+        color: color('danger');
+        display:block;
+        margin-bottom:rem(15px);
+    }
+
+    .input-group,
+    .PhoneInput{
+        background: color('ice');
+        // box-shadow: 0 rem(2px) rem(5px) rgba(#000000, 0.16);
+        box-shadow: $shadow;
+
+        .input-group-text{
+            padding: rem(5) rem(15px);
+        }
+        
+        .form-control,
+        input[type="tel"]{
+            background-color: transparent;
+        }
+
+        .form-control{
+            box-shadow:none;
+            border:none;
+    
+            &:focus,
+            &:active{
+                box-shadow:none;
+                border:none;
+            }
+        }
+    }
+
+    .PhoneInput{
+        margin-bottom: rem(16px);
+
+        .PhoneInputCountry{
+            min-width: rem(50px);
+            display: flex;
+            justify-content: center;
+            padding-left: rem(10px);
+        }
+        input[type="tel"],
+        input[type="tel"]:focus,
+        input[type="tel"]:focus-visible,
+        input[type="tel"]:active{
+            border: none !important;
+        }
+
+        &.PhoneInput--focus{
+            input[type="tel"],
+            input[type="tel"]:focus,
+            input[type="tel"]:focus-visible,
+            input[type="tel"]:active{
+                border: none !important;
+            }
+        }
+    }
+
+
+    .input-group-text{
+        // background-color: transparent;
+        // border: none;
+    }
+
+    .form-control{
+        @include font(400,1.4,'nr','base');
+        background: color('ice');
+        // box-shadow: 0 rem(2px) rem(5px) rgba(#000000, 0.16);
+        box-shadow: $shadow;
+
+        &:focus,
+        &:active{
+
+        }
+    }
+
+}//cyber-form-control
+

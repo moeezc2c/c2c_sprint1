@@ -1,0 +1,25 @@
+.freelancer-list{
+    padding: rem(40px);
+    @include font(400,1.4,'nr','base');
+
+    & + .freelancer-list{
+        border-top:rem(2px) solid color('border');;
+    }
+
+    .img-fluid{
+        width: 100%;
+        height: rem(200px);
+        float: none;
+        display: block;
+        margin: auto;
+        border-radius: $widget-radius !important;
+    }
+
+    .tags-row{
+
+    }
+
+    &:last-of-type {
+        //padding-bottom: rem(10px);
+    }
+}

@@ -1,0 +1,11 @@
+.page-contract-details{
+    .advanced-search{
+        .btn-filter{
+            padding: rem(0px) rem(20px);
+            @media (max-width:767px){
+                margin-left: rem(20px);
+                width: calc(100% - #{rem(20px)});
+            }
+        }
+    }
+}

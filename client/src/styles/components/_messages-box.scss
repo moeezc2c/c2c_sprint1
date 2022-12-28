@@ -1,0 +1,202 @@
+.messages-box{
+    overflow:hidden;
+    border-radius:$widget-radius;
+    position:relative;
+
+    &--header{
+        padding: rem(25px) rem(25px);
+        border-bottom:rem(1px) solid color('border');
+
+        .title{
+            margin: 0;
+        }
+    }
+
+    &--search-area{
+        padding: rem(15px);
+        border-bottom: rem(1px) solid color('border');
+        min-height: rem(77px);
+        display: flex;
+        align-items: center;
+
+        .title{
+            margin:0;
+            @include font(bold,1.4,'mdssssssss','heading');
+        }
+    }
+
+    &--list-area{
+        height:rem(693px);
+        overflow-y: auto;
+        @include scrollbar();
+    }
+
+    &--selected-header{
+        padding: rem(14px);
+        min-height:rem(76px);
+        border-bottom: rem(1px) solid color('border');
+
+        h5{
+            @include font(600,1.4,'nr','heading');
+            text-transform: capitalize;
+            padding: rem(8px) 0;
+            margin: rem(4px) 0;
+
+            @media (max-width:767px){
+                margin: 0;
+                padding:0;
+            }
+        }
+
+        .btn{
+            padding: rem(5px) rem(26px);
+            line-height: 1;
+            height: rem(45px);
+
+            &.btn-back{
+                padding: rem(8px);
+                width: rem(40px);
+                height: rem(40px);
+                text-align: center;
+                margin-right: rem(15px);
+            }
+        }
+
+        .input-group{
+            .form-control {
+                height: rem(45px);
+                box-shadow:none;
+            }
+        }
+
+        .col.text-right {
+            min-width: rem(290px);
+        }
+    }
+
+    &--body{
+        display:flex;
+        min-height: rem(700px);
+
+        &-left{
+            flex: 1 0 0;
+            border-right: rem(1px) solid color('border');
+            height:rem(770px);
+        }
+
+        &-right{
+            flex: 2 0 0;
+            background: color('widget-bg');
+
+            @media (max-width:767px){
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+                height: 100%;
+            }
+        }
+    }
+
+    &--chat-list-item{
+        border-bottom: rem(1px) solid color('border');
+        cursor: pointer;
+
+        &:hover{
+            background: color('ice');
+        }
+
+        img.rounded-circle {
+            width: rem(40px);
+        }
+        h6{
+            @include font(600,1.4,'xs','heading');
+        }
+    }
+
+    &--chat-area{
+        textarea.form-control {
+            height: rem(100px);
+            overflow-y: auto;
+            resize: none;
+            @include font(normal,1.4,'sm','base');
+        }
+    }
+
+    &--chat-box{
+        height:rem(500px);
+        overflow-y: auto;
+        @include scrollbar();
+    }
+
+
+    .chat-area{
+
+        &--main-date{
+            text-align:center;
+            margin-bottom: rem(15px);
+
+            span{
+                background: color('primary-bg');
+                color: color('primary-fg');
+                padding: rem(10px) rem(15px);
+                box-shadow: 0 rem(2px) rem(5px) rgba(0,0,0,0.08);
+                border-radius: $widget-radius;
+                max-width: rem(400px);
+                min-width: rem(140px);
+                display: inline-block;
+            }
+        }
+
+        &--other{
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+        }
+
+        &--you{
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+        }
+        
+        .messageSize{
+            // background: color('widget-bg');
+            // padding: rem(10px) rem(15px);
+            // box-shadow: 0 rem(2px) rem(5px) rgba(0,0,0,0.08);
+            // border-radius: $widget-radius;
+            // max-width: rem(400px);
+            // min-width: rem(250px);
+        }
+
+        &--bubble{
+            background: color('widget-bg');
+            padding: rem(10px) rem(15px);
+            box-shadow: 0 rem(2px) rem(5px) rgba(0,0,0,0.08);
+            border-radius: $widget-radius;
+            max-width: rem(400px);
+            min-width: rem(250px);
+        }
+
+        &--bubble-text{
+            width: 100%;
+            display: block;
+        }
+
+        &--bubble-time{
+            text-align: end;
+            display: block;
+        }
+
+        &--bubble-icon{
+
+        }
+
+        i.chat-area--bubble-icon {
+            display: none !important;
+        }
+
+    }
+    
+    
+}
